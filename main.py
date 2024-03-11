@@ -29,7 +29,7 @@ def tc_slashn(text: str, length: int):
 
                 for l in tmp_result:
                     result += l + "\n"
-                
+
                 length_counter = 0
             elif length_counter >= length and character not in marks_2:
                 result += character + "\n"
@@ -44,7 +44,12 @@ def tc_slashn(text: str, length: int):
                 result += "\n"
             else:
                 result += character + "\n"
+
             length_counter = 0
         else:
             result += character
+    
     return result
+
+if __name__ == "__main__":
+    print(tc_slashn("在 5 分鐘之內根據主題築起一個建築！透過「傳奇屎詩」到「傳奇」的評級進行各建築的評分。目標是在 16 名玩家中榮獲至多的投票！", 20))
