@@ -32,9 +32,3 @@ def tc_slashn(text: str, length: int):
             result += character
 
     return result.replace("⠀", "\n")
-
-if __name__ == "__main__":
-    text = "在 5 分鐘之內根據主題築起一個建築！透過「傳奇屎詩」到「傳奇」的評級進行各建築的評分。目標是在 16 名玩家中榮獲至多的投票！"
-    length = 20
-
-    print(tc_slashn(text, length))
